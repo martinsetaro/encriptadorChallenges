@@ -121,6 +121,11 @@ body
     
     
 }
+.entrada,
+.salida 
+{
+    text-align: left;
+}
 .seccion_texto,
 .seccion_btn,
 .seccion_respuesta
@@ -162,6 +167,28 @@ body
    border: #7e7e7e;
    padding: 1rem;
 }
+.seccion_respuesta p 
+{
+    font-size: 1.3rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: #430d06;
+    font-weight: 700;
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    opacity: 0;
+}
+.seccion_respuesta ion-icon 
+{
+    color: green;
+    font-size: 2rem;
+}
+
+
 .seccion_btn .btn_codificar,
 .seccion_btn .btn_decodificar,
 .seccion_respuesta .btn_copiar

@@ -2,6 +2,8 @@ let modal = document.querySelector('.modal_vacio');
 let codificar = document.querySelector('.btn_codificar');
 let entrada=document.querySelector('.entrada');
 let salida=document.querySelector('.salida');
+let btnCopiar = document.querySelector('.btn_copiar');
+let aviso = document.querySelector('.seccion_respuesta p');
 
 
 
@@ -24,6 +26,24 @@ if(entrada.value == ""){
 }
 
 
+
+
+}
+
+
+btnCopiar.addEventListener('click',copia)
+
+
+function copia(){
+    salida.select();
+    document.execCommand('copy');
+    aviso.style.opacity='1';
+
+    setTimeout(()=>{
+        aviso.style.opacity='0';
+    },2000)
+
+    
 
 
 }
