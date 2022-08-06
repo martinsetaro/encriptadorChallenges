@@ -1,0 +1,206 @@
+:root {
+    --fuentePrincipal:'Rubik', sans-serif;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html 
+{
+    font-size: 62.5%;
+    
+
+}
+body 
+{
+    background-color: #430d06;
+}
+.main 
+{
+    max-width: 120rem;
+    height: 20rem;
+    margin: 0 auto;
+   
+
+}
+
+.header 
+{
+    background-color: #fdecda;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.main h1 
+{
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    text-align: center;
+    color: #430d06;
+    font-weight: 700;
+   
+}
+.seccion_proyecto
+{
+    width: 100%;
+    height: 40rem;
+    background-color: #fdecda;
+    display: flex;
+    justify-content: space-around;
+      
+    
+    
+}
+.seccion_texto,
+.seccion_btn,
+.seccion_respuesta
+{
+    width: 100%;
+    height: 30rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion_texto textarea
+{
+   width: 90%;
+   height: 20rem;
+   border: #7e7e7e;
+   padding: 1rem;
+   
+}
+.seccion_texto textarea:focus,
+.seccion_respuesta textarea:focus
+{
+   outline-color: lightblue;
+}
+.seccion_texto h4 
+{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #430d06;
+    font-weight: 700;
+}
+.seccion_respuesta textarea
+{
+   width: 90%;
+   height: 20rem;
+   border: #7e7e7e;
+   padding: 1rem;
+}
+.seccion_btn .btn_codificar,
+.seccion_btn .btn_decodificar,
+.seccion_respuesta .btn_copiar
+{
+    
+        box-shadow:inset 0px 1px 0px 0px #ffffff;
+        background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+        background-color:#f9f9f9;
+        border-radius:6px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#666666;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+    }
+    .seccion_btn .btn_codificar:hover,
+.seccion_btn .btn_decodificar:hover,
+.seccion_respuesta .btn_copiar:hover {
+        background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+        background-color:#e9e9e9;
+    }
+    .seccion_btn .btn_codificar:active,
+.seccion_btn .btn_decodificar:active,
+.seccion_respuesta .btn_copiar:active {
+        position:relative;
+        top:1px;
+    }
+    .footer 
+    {
+        width: 100%;
+        height: 6rem;
+        background-color: #1e1e1e;
+        padding: 1rem;
+    }
+.footer h2 
+{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+}
+.footer .texto_alura 
+{
+    color: orange;
+}
+
+
+@media (max-width: 768px) 
+{
+    .main 
+    {
+       width: 100%;
+    }
+    .header img
+    {
+        width: 20rem;
+        height: 6rem;
+    }
+    .header h1 
+    {
+        font-size: 1.8rem;
+    }
+    .seccion_proyecto
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70rem;
+        justify-content: center;
+
+    }
+    .seccion_texto,
+    .seccion_btn,
+    .seccion_respuesta
+    {
+        height: 20rem;
+    }
+    .seccion_texto textarea
+    {
+        height: 30rem;
+    }
+    .seccion_texto h4 
+    {
+        font-size: 1.5rem;
+    }
+    .seccion_respuesta textarea
+    {
+        height: 30rem;
+    }
+    .footer 
+    {
+        width: 100%;
+        height: 8rem;
+    }
+    .footer h2 
+    {
+        font-size: 1.8rem;
+    }
+}
