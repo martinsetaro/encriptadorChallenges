@@ -286,6 +286,11 @@ body
     {
         height: 30rem;
     }
+    .modal_vacio 
+    {
+        margin-left: 5rem;
+        margin-top: -4rem;
+    }
     .footer 
     {
         width: 100%;
