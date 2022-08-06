@@ -18,8 +18,12 @@
             <h1>Proyecto encriptador de texto</h1>
         </header>
         <section class="seccion_proyecto">
+            <div class="modal_vacio">
+                <img src="./img/detectiv.png" alt="detective" title="detective"/>
+                <p>...mmm no encontre texto para codificar</p>
+            </div>
             <div class="seccion_texto">
-                <textarea placeholder="Su texto...">
+                <textarea class="entrada" placeholder="Su texto...">
 
                 </textarea>
                 <h4>Solo ingresar letras minusculas y sin acentos o caracteres especiales.</h4>
@@ -29,7 +33,7 @@
                 <button class="btn_decodificar">DesEncriptar</button>
             </div>
             <div class="seccion_respuesta">
-                <textarea placeholder="Respuesta....">
+                <textarea class="salida" placeholder="Respuesta....">
 
                 </textarea>
                 <button class="btn_copiar">Copiar</button>
@@ -42,6 +46,7 @@
 
 
     </main>
+    <script src="app.js"></script>
     
 </body>
 </html>
